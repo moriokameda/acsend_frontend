@@ -1,0 +1,105 @@
+header.container-fluid
+    nav.row.nav-height
+        .col-md-5.font-ja.col-6.row
+            .col-2.logo-img-wrap
+                img.logo-img(src="./img/company_icon.png")
+            .col-10
+                .title.font-ja 株式会社アセンド
+        .col-md-7.pc-nav
+            ul.row.nav-menu.nav-link-none
+                li.col-md.offset-md-2.nav-link-item
+                    a(href="#").nav-link
+                        .nav-item Philosophy
+                            br
+                            span.small-80.font-ja 私たちの想い
+                li.col-md.nav-link-item
+                    a(href="#").nav-link
+                        .nav-item Service
+                            br
+                            span.small-80.font-ja サービス紹介
+                li.col-md.nav-link-item
+                    a(href="#").nav-link.in-submenu
+                        .nav-item Company
+                            br
+                            span.small-80.font-ja 企業情報
+                    ul.sub-nav-menu
+                        li
+                            a.sub-nav-item(href="#") 会社概要
+                li.col-md.nav-link-item
+                    a(href="#").nav-link.in-submenu
+                        .nav-item Recruit
+                            br
+                            span.small-80.font-ja 採用情報
+                    ul.sub-nav-menu
+                        li
+                            a.sub-nav-item(href="#") メッセージ
+                        li
+                            a.sub-nav-item(href="#") アセンドを知る
+                        li
+                            a.sub-nav-item(href="#") 募集要項
+                li.col-md.nav-link-item
+                    a(href="#").nav-link-img
+                        img.email-icon(src="./img/mail_icon-icons.com_72317.png")
+        .col-xs-3.offset-xs-4
+            .hamburger-menu
+                input#drawer-check(type="checkbox").drawer-hidden
+                label.menu-btn(for="drawer-check")
+                    span
+                ul.nav-link.nav-link-none.col-11.offset-1.hamburger-content.pt-5
+                    li.nav-item.py-4
+                        a(href="#").nav-link
+                            .nav-item Philosophy
+                                br
+                                span.small-80.font-ja 私たちの想い
+                        hr
+                    li.nav-item.pb-4
+                        a(href="#").nav-link
+                            .nav-item Service
+                                br
+                                span.small-80.font-ja サービス紹介
+                        hr
+                    li.nav-item.pb-4
+                        .row
+                            .col-10
+                                a(href="#").nav-link.in-accordion
+                                    .nav-item Company
+                                        br
+                                        span.small-80.font-ja 企業情報
+                                ul.sub-nav-menu.pl-3
+                                    li.py-3.pl-5
+                                        a.sub-nav-item(href="#") 会社概要
+                            .col-2.open-btn
+                                i.bi.bi-plus
+                            .col-2.close-btn
+                                i.bi.bi-dash
+                        hr
+                    li.nav-item.pb-4
+                        .row
+                            .col-10
+                                a(href="#").nav-link.in-accordion
+                                    .nav-item Recruit
+                                        br
+                                        span.small-80.font-ja 採用情報
+                                ul.sub-nav-menu.pl-5
+                                    li.py-3.pl-3
+                                        a.sub-nav-item(href="#") メッセージ
+                                    li.pb-3.pl-3
+                                        a.sub-nav-item(href="#") アセンドを知る
+                                    li.pb-3.pl-3
+                                        a.sub-nav-item(href="#") 募集要項
+                            .col-2.open-btn
+                                i.bi.bi-plus
+                            .col-2.close-btn
+                                i.bi.bi-dash
+                        hr
+                    li.nav-item.pb-4
+                        a(href="#").nav-link
+                            .nav-item お知らせ
+                        hr
+                    li.nav-item.pb-4
+                        .row
+                            a(href="#").col-10.offset-1.contact.row.py-3
+                                .col-2.offset-1
+                                    img(src="./img/mail_icon-icons.com_72317.png")
+                                .col-6.nav-item
+                                    .font-ja.pt-3 お問い合わせ
