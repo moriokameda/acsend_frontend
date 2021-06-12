@@ -5,8 +5,12 @@ section.recruit-top
         .container-fluid
             .row
                 .col-md-10.offset-md-1
-                    nav.breadcrumb-wrap
-                        ol.breadcrumb
+                    nav.breadcrumb-wrap(aria-label="ぱんくずリスト" style="--bs-breadcrumb-divider: '>';")
+                        ol.breadcrumb(style="")
                             li.breadcrumb-item
                                 a(href="/").font-ja ホーム
                             li.breadcrumb-item(aria-current="採用情報").font-ja 採用情報
+                    .title-area
+                        h1.font-en.title Recruit
+                            br
+                            p.text-center.font-ja 採用情報

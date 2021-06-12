@@ -31,8 +31,23 @@ header {
     .font-ja {
         font-family: "Noto Sans JP",  serif;
     }
+    //    現在のページを赤くする
+    .active {
+        color: #ee0000;
+        border-bottom: 1px solid #ee0000;
+        margin: 0 auto;
+        width: 80%;
+    }
+    .active::after {
+        content: "";
 
-    @media screen and (max-width: 767px) {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        text-decoration: underline;
+    }
+
+        @media screen and (max-width: 767px) {
         height: 50px;
         .title {
             padding-top: 1vw;

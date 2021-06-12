@@ -23,7 +23,15 @@ $(function () {
         $(this).siblings(".open-btn").show()
         elem.children(".sub-nav-menu").hide(500)
     })
+    let pcNavLinks = $('.pc-nav .nav-link')
+    let pathName = location.pathname.split("/")[1]
+    console.log(location.pathname.split("/"))
+    pcNavLinks.each(function (index,pcNavLink) {
+        console.log($(pcNavLink).attr("href"))
+        console.log(`/${pathName}`)
+        if ($(pcNavLink).attr("href") === `/${pathName}`) {
+            console.log(true)
+            $(pcNavLink).find(".nav-item").addClass("active")
+        }
+    })
 })
-
-
-sayHello();

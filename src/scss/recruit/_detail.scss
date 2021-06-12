@@ -1,0 +1,43 @@
+#detail {
+    h3 {
+        font-size: 1.2rem;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    .card-wrap {
+        padding-top: 3rem;
+    }
+    .card-body {
+        padding-top: 1rem;
+    }
+    a {
+        //text-decoration: underline #ee0000;
+        padding-top: 5vw;
+        text-decoration: none;
+    }
+    .more-btn {
+        //display: table;
+        position: relative;
+        //padding-left:  2em;
+        margin-top: .5rem;
+        padding-right: 2em;
+        margin-left: 75%;
+        min-width: 5em;
+        right: 0;
+        color: #ee0000;
+        border-bottom: 1px solid #ee0000;
+
+    }
+    .more-btn::after {
+        position: absolute;
+        top: 50%;
+        right: 1em;
+        width: 0.5rem;
+        height: .5rem;
+        transform: translateY(-50%) rotate(45deg);
+        border-right: 2px solid currentColor;
+        border-top: 2px solid currentColor;
+        content: "";
+    }
+}

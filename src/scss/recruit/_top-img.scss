@@ -6,8 +6,20 @@
     background-color: #fff;
     img {
         opacity: 0.6;
+        width: 100vw;
+        max-height: 40vw;
     }
 }
-/**
-パンくずリスト
- */
+.title-area {
+    padding-top: 10vw;
+    padding-bottom: 20vw;
+    width: 15vw;
+    h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+    }
+    p {
+        font-size: 1rem;
+    }
+
+}
