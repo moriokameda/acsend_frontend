@@ -33,8 +33,15 @@
             height: 78vw;
         }
         &::before {
-            border-bottom: 78vw solid transparent;
+            left: 0;
+            border-bottom: 50vw solid transparent;
             border-left: 25vw solid #8b0000;
+        }
+        .left-base {
+            width: 0vw;
+        }
+        .right-base {
+            width: 100vw;
         }
     }
 }
@@ -49,6 +56,10 @@
 }
 .about-us-main {
     position: relative;
+    @media screen and (max-width: 767px){
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
 }
 
 .btn-area {

@@ -1,0 +1,15 @@
+/**
+ぱんくずリスト
+ */
+$breadcrumb-divider: quote(">");
+.breadcrumb-wrap {
+    padding-top: 1rem;
+    z-index: 2;
+    a {
+        text-decoration: none;
+        color: #111111;
+    }
+    .breadcrumb-item {
+        color: #111111;
+    }
+}

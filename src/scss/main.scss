@@ -1,90 +1,7 @@
 @import 'reset';
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
-html {
-    max-width: 100vw;
-    font-size: calc(100vw / 75);
-}
-body {
-    font-family: 'Noto Serif', 'Noto Serif JP', serif;
-    width: 100%;
-    position: relative;
-}
-header {
-    position: relative;
-}
-main {
-    position: relative;
-}
-#about-us {
-    position: relative;
-}
-ul {
-    margin-bottom: 0;
-}
-
-/**
-フォントの設定
- */
-h2 {
-    font-size: 2.5rem;
-}
-.font-en {
-    font-family: 'Noto Serif', serif;
-}
-
-.font-ja {
-    font-family: 'Noto Serif JP', serif;
-}
-
-.small-80 {
-    font-size: 0.8rem;
-    @media screen and (max-width: 767px){
-        font-size: 1.2rem;
-    }
-}
-.small-60 {
-    font-size: 0.6rem;
-    @media screen and (max-width: 767px){
-        font-size: 0.9rem;
-    }
-}
-.title {
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1rem;
-    @media screen and (max-width: 767px){
-        font-size: 1.5rem;
-    }
-}
-.text-right {
-    text-align: right;
-}
-/**
-色の設定
- */
-.bg-off-white {
-    background-color: #eed;
-}
-
-.bg-danger {
-    background-color: darkred !important;
-}
-
-.wrapper {
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-
-    h1 {
-        font-weight: 400;
-    }
-}
-
+@import "include/common";
 /**
 ボタンの設定
  */
@@ -108,16 +25,19 @@ p {
 
     p.font-en {
         margin-bottom: 0;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 1em;
     }
     @media screen and (max-width: 767px){
-        min-width: 30rem;
-        max-width: 30rem;
+        min-width: 50rem;
+        max-width: 80rem;
         padding: 1.5em 2em;
         p.font-en {
-            font-size: 1.5rem;
+            font-size: 16px;
             line-height: 1.5em;
+        }
+        .font-ja {
+            font-size: 10px;
         }
     }
 }
@@ -125,19 +45,20 @@ p {
 .btn-link::after {
     position: absolute;
     top: 50%;
-    right: 2em;
-    width: 1em;
-    height: 1em;
+    right: 1.5em;
+    width: 0.8rem;
+    height: .8rem;
     transform: translateY(-50%) rotate(45deg);
     border-right: 2px solid currentColor;
     border-top: 2px solid currentColor;
     content: "";
     @media screen and (max-width: 767px){
-        width: .8em;
-        height: .8em;
+        width: 2em;
+        height: 2em;
+        right: 3rem;
         transform: translateY(-50%) rotate(45deg);
-        border-right: 1.5px solid currentColor;
-        border-top: 1.5px solid currentColor;
+        border-right: 2px solid currentColor;
+        border-top: 2px solid currentColor;
     }
 }
 
@@ -151,8 +72,8 @@ p {
     background-color: #cccccc;
     position: relative;
     padding: 1em 2em;
-    min-width: 20em;
-    max-width: 20em;
+    min-width: 15em;
+    max-width: 15em;
     margin-right: auto;
     margin-left: auto;
     border: 2px solid #cccccc;
@@ -165,13 +86,16 @@ p {
     transition: 0.5s;
     p.font-en {
         margin-bottom: 0;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     @media screen and (max-width: 767px){
-        min-width: 22em;
-        max-width: 25em;
-        p {
-            font-size: 1.5rem;
+        min-width: 40em;
+        max-width: 40em;
+        p.font-en {
+            font-size: 14px;
+        }
+        .font-ja {
+            font-size: 10px;
         }
     }
 }
@@ -187,8 +111,8 @@ p {
     border-top: 2px solid currentColor;
     content: "";
     @media screen and (max-width: 767px){
-        width: .8em;
-        height: .8em;
+        width: 1.5em;
+        height: 1.5em;
         transform: translateY(-50%) rotate(45deg);
         border-right: 1.5px solid currentColor;
         border-top: 1.5px solid currentColor;
@@ -205,93 +129,18 @@ p {
 ボーダーの設定
  */
 .red-line {
-    width: 5rem;
+    width: 3.5rem;
     margin: 1vw auto;
     padding: 0.1rem;
     background: linear-gradient(90deg,#8b0000, #fc0);
-}
-/**
-画像の設定
- */
-img {
-    max-width: 100%;
-    object-fit: cover;
-    height: auto;
+    @media screen and (max-width: 767px){
+        width: 60px;
+    }
 }
 
 // headerの設定
 @import "include/header";
-/**
-トップ画像
- */
-.top-img {
-    max-width: 100%;
-    width: 100%;
-    margin: 0;
-    background-color: #111;
-    position: relative;
-}
-
-.bg-img {
-    max-width: 100%;
-    //max-height: 50vw;
-    background-color: #111111;
-    z-index: 1;
-
-    img {
-        max-width: 100%;
-        width: 100vw;
-        height: auto;
-        max-height: 50vw;
-        object-fit: cover;
-        overflow: hidden;
-        z-index: 1;
-        opacity: 0.5;
-
-    }
-
-    @media screen and (max-width: 767px) {
-        //max-height: 60vw;
-        img {
-            //max-height: 50vw;
-        }
-    }
-}
-
-.main-area {
-    padding-top: calc(60% / 2);
-    padding-bottom: calc(25% / 4);
-    width: 100vw;
-    color: #fff;
-
-    .main-title {
-        z-index: 10;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-        margin-bottom: 1rem;
-    }
-
-    p {
-        font-size: 1.4rem;
-        margin-bottom: 0;
-    }
-
-    @media screen and (max-width: 767px) {
-        h1 {
-            font-size: 3.3rem;
-        }
-        p {
-            font-size: 1.5rem;
-            display: block;
-        }
-        .text-center {
-            padding-left: 4rem;
-        }
-    }
-}
-
+@import "include/top-img";
 /**
 斜め分割
  */
@@ -325,8 +174,8 @@ img {
     text-decoration: none;
     transform: translateX(-50%);
     @media screen and (max-width: 767px){
-        font-size: 1rem;
-        bottom: -5%;
+        font-size: 2.5rem;
+        bottom: -4vw;
     }
 }
 #scroll::after {
@@ -359,24 +208,48 @@ img {
             transform-origin: 0 100%;
         }
     }
+    @media screen and (max-width: 767px){
+        height: 9vw;
+        bottom: -5vw;
+    }
 }
 
 #service {
     position: relative;
     z-index: 11;
+    @media screen and (max-width: 767px){
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
     .btn-link {
-        min-width: 20em;
-        max-width: 20em;
+        min-width: 15em;
+        max-width: 15em;
         padding: 1em 2em;
         p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
+        }
+        @media screen and (max-width: 767px){
+            min-width: 40vw;
+            max-width: 50vw;
+            p {
+                font-size: 14px;
+            }
+
         }
     }
     .btn-link::after {
         width: .5em;
         height: .5em;
+        @media screen and (max-width: 767px){
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 }
 @import "include/about-us";
 @import "include/recruit-news";
 @import "include/footer";
+
+/**
+各ページのcss
+ */

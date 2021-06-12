@@ -14,14 +14,14 @@ $(function () {
     $('.open-btn').on("click", function () {
         let elem = $(this).siblings(".col-10");
         $(this).hide()
-        $(this).siblings(".close-btn").show(300)
+        $(this).siblings(".close-btn").show()
         elem.children(".sub-nav-menu").show(500)
     })
     $('.close-btn').on("click", function () {
         let elem = $(this).siblings(".col-10");
         $(this).hide()
-        $(this).siblings(".open-btn").show(300)
-        elem.children(".sub-nav-menu").hide(300)
+        $(this).siblings(".open-btn").show()
+        elem.children(".sub-nav-menu").hide(500)
     })
 })
 

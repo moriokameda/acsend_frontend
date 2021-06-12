@@ -1,0 +1,105 @@
+html {
+    max-width: 100vw;
+    font-size: calc(100vw / 75);
+}
+body {
+    font-family: 'Noto Serif', 'Noto Serif JP', serif;
+    width: 100%;
+    position: relative;
+}
+header {
+    position: relative;
+}
+main {
+    position: relative;
+}
+#about-us {
+    position: relative;
+}
+ul {
+    margin-bottom: 0;
+}
+
+/**
+フォントの設定
+ */
+h2 {
+    font-size: 2rem;
+    @media screen and (max-width: 767px){
+        font-size: 24px;
+    }
+}
+.font-en {
+    font-family: 'Noto Serif', serif;
+}
+
+.font-ja {
+    font-family: 'Noto Sans JP', serif;
+}
+
+.small-80 {
+    font-size: 0.8rem;
+    @media screen and (max-width: 767px){
+        font-size: 12px;
+    }
+}
+.small-70 {
+    font-size: .7rem;
+}
+.small-60 {
+    font-size: 0.6rem;
+    @media screen and (max-width: 767px){
+        font-size: 0.9rem;
+    }
+}
+.small-50 {
+    font-size: .5rem;
+}
+.title {
+    font-size: 2rem;
+}
+.section-sub-title {
+    @media screen and (max-width: 767px){
+        font-size: 12px;
+    }
+}
+
+p {
+    font-size: 0.75rem;
+    @media screen and (max-width: 767px){
+        font-size: 12px;
+    }
+}
+.text-right {
+    text-align: right;
+}
+/**
+色の設定
+ */
+.bg-off-white {
+    background-color: #eed;
+}
+
+.bg-danger {
+    background-color: darkred !important;
+}
+
+.wrapper {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+
+    h1 {
+        font-weight: 400;
+    }
+}
+/**
+画像の設定
+ */
+img {
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}

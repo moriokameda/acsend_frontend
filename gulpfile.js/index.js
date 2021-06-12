@@ -8,7 +8,7 @@ const path = {
 };
 
 function html() {
-  return src([`${path.src}/pug/*.pug`, `!${path.src}/pug/**/_*.pug`])
+  return src([`${path.src}/pug/*.pug`,`${path.src}/pug/**/*.pug`, `!${path.src}/pug/**/_*.pug`])
     .pipe(
       $.plumber({
         errorHandler: $.notify.onError('Error: <%= error.message %>'),
@@ -19,7 +19,7 @@ function html() {
         pretty: true,
       })
     )
-    .pipe(dest(path.dist))
+    .pipe(dest(`${path.dist}`))
     .pipe(
       $.browserSync.reload({
         stream: true,
@@ -29,7 +29,7 @@ function html() {
 }
 
 function css() {
-  return src(`${path.src}/scss/*.scss`)
+  return src([`${path.src}/scss/*.scss`, `${path.src}/scss/**/*.scss`])
     .pipe(
       $.plumber({
         errorHandler: $.notify.onError('Error: <%= error.message %>'),
