@@ -15,11 +15,8 @@
   <body>
     <header class="container-fluid">
       <nav class="row nav-height">
-        <div class="col-md-5 font-ja col-8 offset-2 offset-md-0 row">
-          <div class="col-2 logo-img-wrap text-right"><img class="logo-img" src="/img/company_icon.png"></div>
-          <div class="col-10">
-            <div class="title font-ja">株式会社アセンド</div>
-          </div>
+        <div class="col-md-5 font-ja col-8 offset-2 offset-md-0 row"><a class="col-2 logo-img-wrap text-right" href="/"><img class="logo-img" src="/img/company_icon.png"></a>
+          <div class="col-10"><a class="title font-ja" href="/">株式会社アセンド</a></div>
         </div>
         <div class="col-md-7 pc-nav">
           <ul class="row nav-menu nav-link-none">
@@ -27,16 +24,21 @@
                 <div class="nav-item">Philosophy<br><span class="small-70 font-ja">私たちの想い</span></div></a></li>
             <li class="col-md nav-link-item"><a class="nav-link" href="/service">
                 <div class="nav-item">Service<br><span class="small-70 font-ja">サービス紹介</span></div></a></li>
-            <li class="col-md nav-link-item"><a class="nav-link in-submenu" href="/company">
-                <div class="nav-item">Company<br><span class="small-70 font-ja">企業情報</span></div></a>
+            <li class="col-md nav-link-item">
+              <div class="nav-link in-submenu">
+                <div class="nav-item">Company<br><span class="small-70 font-ja">企業情報</span></div>
+              </div>
               <ul class="sub-nav-menu">
-                <li><a class="sub-nav-item" href="/company/summary">会社概要</a></li>
+                <li><a class="sub-nav-item font-ja" href="/company">企業情報トップ</a></li>
+                <li><a class="sub-nav-item font-ja" href="/company/summary">会社概要</a></li>
               </ul>
             </li>
-            <li class="col-md nav-link-item"><a class="nav-link in-submenu" href="/recruit">
-                <div class="nav-item">Recruit<br><span class="small-70 font-ja">採用情報</span></div></a>
-              <ul class="sub-nav-menu">
-                <li><a class="sub-nav-item" href="/recruit/message">メッセージ</a></li>
+            <li class="col-md nav-link-item">
+              <div class="nav-link in-submenu">
+                <div class="nav-item">Recruit<br><span class="small-70 font-ja">採用情報</span></div>
+              </div>
+              <ul class="sub-nav-menu font-ja">
+                <li><a class="sub-nav-item" href="/recruit/message">採用情報トップ</a></li>
                 <li><a class="sub-nav-item" href="/recruit/about-us">アセンドを知る</a></li>
                 <li><a class="sub-nav-item" href="/recruit/job-description">募集要項</a></li>
               </ul>
@@ -59,9 +61,12 @@
               </li>
               <li class="nav-item pb-4">
                 <div class="row">
-                  <div class="col-10"><a class="nav-link in-accordion" href="/company">
-                      <div class="nav-item">Company<br><span class="small-80 font-ja">企業情報</span></div></a>
+                  <div class="col-10">
+                    <div class="nav-link in-accordion">
+                      <div class="nav-item">Company<br><span class="small-80 font-ja">企業情報</span></div>
+                    </div>
                     <ul class="sub-nav-menu pl-3">
+                      <li class="py-2 pl-5"><a class="sub-nav-item" href="/company">企業情報トップ</a></li>
                       <li class="py-2 pl-5"><a class="sub-nav-item" href="/company/summary">会社概要</a></li>
                     </ul>
                   </div>
@@ -72,10 +77,12 @@
               </li>
               <li class="nav-item pb-4">
                 <div class="row">
-                  <div class="col-10"><a class="nav-link in-accordion" href="/recruit">
-                      <div class="nav-item">Recruit<br><span class="small-80 font-ja">採用情報</span></div></a>
+                  <div class="col-10">
+                    <div class="nav-link in-accordion">
+                      <div class="nav-item">Recruit<br><span class="small-80 font-ja">採用情報</span></div>
+                    </div>
                     <ul class="sub-nav-menu pl-5">
-                      <li class="py-2 pl-3"><a class="sub-nav-item" href="/recruit/message">メッセージ</a></li>
+                      <li class="py-2 pl-3"><a class="sub-nav-item" href="/recruit">採用情報トップ</a></li>
                       <li class="pb-2 pl-3"><a class="sub-nav-item" href="/recruit/about-us">アセンドを知る</a></li>
                       <li class="pb-2 pl-3"><a class="sub-nav-item" href="/recruit/job-description">募集要項</a></li>
                     </ul>
@@ -102,13 +109,176 @@
       </nav>
     </header>
     <main>
-      <section id="top-img"></section>
+      <section id="top-img">
+        <nav class="breadcrumb-wrap" aria-label="ぱんくずリスト" style="--bs-breadcrumb-divider: '&gt;';">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="font-ja" href="/">ホーム</a></li>
+            <li class="breadcrumb-item"><a class="font-ja" href="/recruit">採用情報</a></li>
+            <li class="breadcrumb-item font-ja" aria-current="採用情報">募集要項（川崎コールセンター・テレフォンアポインター）</li>
+          </ol>
+        </nav>
+        <div class="title-area">
+          <h1 class="font-en title">募集要項（川崎コールセンター・テレフォンアポインター）</h1>
+        </div>
+      </section>
+      <section id="message">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <p class="font-ja">川崎コールセンターでは、通販サービスのカタログの送付や会員獲得のご案内を行っております。</p>
+              <p class="font-ja">マニュアルを見ながら電話をかけ続けていただくお仕事で、ノルマはありません。未経験から始めたスタッフも、多数活躍しております。</p>
+              <p class="font-ja">川崎コールセンターの詳しい募集要項は、こちらよりご確認ください。皆様のご応募お待ちしております。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="job-detail">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-10 offset-md-1">
+              <table class="table table-bordered">
+                <tr>
+                  <th class="font-ja align-middle">募集職種</th>
+                  <td class="font-ja align-middle">
+                    <ul>
+                      <li>コールセンター</li>
+                      <li>テレフォンアポインター</li>
+                      <li>サポートスタッフ</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="font-ja align-middle">仕事内容</th>
+                  <td class="font-ja align-middle">
+                    <ul>
+                      <li>電話をかける</li>
+                      <li>データ入力など</li>
+                    </ul>
+                    <p>法人企業宛てに大手オフィス用品通販サービスのカタログ送付などの<br>会員獲得のご案内をお願いします！</p><br>
+                    <p>マニュアルを見ながらリストに沿ってさくさく電話をかけ続けていただくお仕事です！<br>1時間に1件獲得できるため未経験の方でもカンタンにできるんです。</p><br>
+                    <p>さらに、、、ノルマはありません♪ご安心ください！<br>会員獲得実績によるインセンティブあり！</p><br>
+                    <p>未経験からはじめたスタッフも多数活躍中!!</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="font-ja align-middle">求める人材</th>
+                  <td class="font-ja align-middle">
+                    <ul class="none-margin-bottom">
+                      <li>主婦（夫）/ フリーター歓迎</li>
+                      <li>扶養内勤務可</li>
+                      <li>未経験OK</li>
+                      <li>学歴不問</li>
+                    </ul>
+                    <p class="margin-bottom">※高校生不可</p><br>
+                    <p>特別な資格や経験は一切不要！１つでも当てはまれば大歓迎！</p><br>
+                    <p>☆オフィスワークに興味がある<br>☆子育てと両立したい<br>☆服やネイル、ピアスも楽しみたい<br>☆子供に何かあった時相談しやすい職場がいい<br>☆子育てが落ち着いたのでパートを探している</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="font-ja align-middle">勤務地</th>
+                  <td class="font-ja align-middle">
+                    <p>川崎コールセンター<br>神奈川県川崎市多摩区登戸3398-1 三井生命登戸ビル3F、6F</p><br>
+                    <p>小田急小田原線・南部線　登戸駅徒歩5分</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="font-ja align-middle">勤務期間・時間</th>
+                  <td class="font-ja align-middle">
+                    <p>長期（3ヶ月以上）☆長期で働ける方大歓迎！</p><br>
+                    <ul class="none-margin-bottom">
+                      <li>週2日以上、1日4時間以上</li>
+                      <li>シフト自由・自己申告</li>
+                      <li>【勤務時間】 9:00〜17:00</li>
+                    </ul>
+                    <p>上記時間内で4H〜OK♪</p>
+                    <p>1時間ごとに5分のリフレッシュ休憩あり♪</p><br>
+                    <p>「保育園/幼稚園の都合があって」</p>
+                    <p>「しっかりフルタイムで入りたい」</p>
+                    <p>「家事と両立したい」</p>
+                    <p>「自分の時間も欲しい」など</p><br>
+                    <p>小さいお子さんがいるスタッフも多いため、働き方は相談OKです。</p><br>
+                    <p>♪土日休み</p>
+                    <p>♪曜日も相談OK</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="font-ja align-middle">給与</th>
+                  <td class="font-ja align-middle">
+                    <p>時給1,050〜1,150円以上＋交通費支給</p>
+                    <p>◆昇給あり</p>
+                    <p>頑張り次第で別途インセンティブあり☆</p>
+                    <p>(最大２万円まで/月)</p><br>
+                    <p>◆月間100h以下or扶養内勤務</p>
+                    <p>時給1.050円〜</p>
+                    <p>（研修期間：最長半年　時給1,000円〜）</p><br>
+                    <p>◆月間100h以上</p>
+                    <p>時給1,150円〜</p>
+                    <p>（研修期間：最長半年　時給1,100円〜</p><br>
+                    <p>◆支払い方法：月１回</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="font-ja align-middle">昇給・賞与</th>
+                  <td class="font-ja align-middle">
+                    <p>昇給あり</p>
+                    <p>インセンティブあり</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="font-ja align-middle">諸手当</th>
+                  <td class="font-ja align-middle">
+                    <p>◆交通費：別途一部支給</p>
+                    <p>（11,000円まで/月）</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="font-ja align-middle">休日・休暇</th>
+                  <td class="font-ja align-middle">
+                    <p>土日・祝日</p>
+                    <p>平日はシフト自己申告制</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="font-ja align-middle">待遇・福利厚生</th>
+                  <td class="font-ja align-middle">
+                    <ul>
+                      <li>休憩室完備</li>
+                      <li>研修制度あり</li>
+                      <li>扶養内勤務可</li>
+                      <li>インセンティブあり（最大20,000円/月）</li>
+                      <li>有給休暇あり（規定あり）</li>
+                      <li>交通費支給（最大11,000円/月）</li>
+                      <li>正社員登用実績あり</li>
+                      <li>昇給あり</li>
+                      <li>ネイル・ピアスOK</li>
+                      <li>服装・髪型・髪色自由</li>
+                      <li>シフト自己申告制</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="entry-btn">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="btn-entry-wrap text-center"><a class="btn-entry" href="">
+                  <p class="font-ja">エントリー</p></a></div>
+              <div class="to-top-wrap text-center"><a class="to-top">
+                  <p class="font-ja">募集要項トップへ戻る</p></a></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="mt-5 pt-3">
+    <footer class="pt-5">
       <div class="container-fluid footer-main mt-5">
         <div class="row mt-5">
           <div class="col-md-2 col-5 offset-md-1 offset-1"><a class="footer-link" href="/philosophy">
-              <p class="font-ja font-weight-bold">私たちの想い</p></a>
+              <p class="font-ja font-weight-bold start">私たちの想い</p></a>
             <div class="footer-link__wrap"><a class="footer-link" href="/company">
                 <p class="font-ja font-weight-bold">企業情報</p></a><a class="footer-link" href="/company/summary">
                 <p class="font-ja">- 会社概要</p></a></div><a class="footer-link" href="/news">
@@ -132,14 +302,12 @@
                 <p class="font-ja">- 募集要項</p></a></div>
           </div>
           <div class="col-md-2 col-5"><a class="footer-link" href="/contact/">
-              <p class="font-ja font-weight-bold">お問い合わせ</p></a><a class="footer-link" href="/solicitation-policy">
-              <p class="font-ja font-weight-bold">勧誘方針</p></a><a class="footer-link" href="/margin">
-              <p class="font-ja font-weight-bold">マージン率の公開</p></a><a class="footer-link" href="/privacy-policy">
-              <p class="font-ja font-weight-bold">プライバシーポリシー</p></a></div>
+              <p class="font-ja font-weight-bold start">お問い合わせ</p></a><a class="footer-link" href="/solicitation-policy">
+              <p class="font-ja font-weight-bold start">勧誘方針</p></a><a class="footer-link" href="/margin">
+              <p class="font-ja font-weight-bold start">マージン率の公開</p></a><a class="footer-link" href="/privacy-policy">
+              <p class="font-ja font-weight-bold start">プライバシーポリシー</p></a></div>
         </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row mt-5 mb-3">
+        <div class="row mt-3 mb-3">
           <div class="col-md-3 offset-md-8 row col-8 offset-2">
             <div class="col-4 file-icon"><img src="/img/file-logo.png"></div>
             <div class="col-4 file-icon"><img src="/img/aws-logo-icon.png"></div>
@@ -147,7 +315,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-copyRight bg-danger">
+      <div class="footer-copyRight">
         <p class="text-center font-en">Copyright©︎2021 Ascend Corporation. All Right Reserved.</p>
       </div>
     </footer>

@@ -4,19 +4,25 @@
 #about-us {
     z-index: 0;
     color: #111111;
+    .white-rotate {
+        padding-top: 150px;
+        @media screen and (max-width: 767px){
+            padding-top: 75px;
+        }
+    }
 }
 .about-us-base {
     position: absolute;
     display: flex;
     max-width: 100vw;
-    height: 55vw;
+    height: 60vw;
     overflow: hidden;
     .left-base {
-        width: 10vw;
+        width: 5vw;
         background-color: #8b0000;
     }
     .right-base {
-        width: 90vw;
+        width: 95vw;
         z-index: -1;
     }
     &::before {
@@ -24,14 +30,12 @@
         z-index: -1;
         position: absolute;
         top: 0;
-        left: 10vw;
-        border-bottom: 55vw solid transparent;
-        border-left: 22vw solid #8b0000;
+        left: 5vw;
+        border-bottom: 60vw solid transparent;
+        border-left: 25vw solid #8b0000;
     }
     @media screen and (max-width: 767px){
-        & {
-            height: 78vw;
-        }
+        height: 80vw;
         &::before {
             left: 0;
             border-bottom: 50vw solid transparent;
@@ -56,9 +60,18 @@
 }
 .about-us-main {
     position: relative;
+    height: 60vw;
     @media screen and (max-width: 767px){
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        height: 130vw;
+    }
+    .margin-bottom {
+        margin-bottom: 70px;
+        @media screen and (max-width: 767px){
+            margin-bottom: 35px;
+        }
+    }
+    a {
+        margin-bottom: 20px;
     }
 }
 

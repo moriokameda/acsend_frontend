@@ -3,8 +3,11 @@
  */
 #recruit-news {
     position: relative;
+    height: 100vw;
+    border-bottom: 1px solid #999999;
     @media screen and (max-width: 767px){
         padding-bottom: 5vw;
+        height: 200vw;
     }
     .recruit-img {
         margin-left: 0;
@@ -15,15 +18,17 @@
 
     .btn-link {
         p {
-            font-size: 1.2rem;
+            font-size: 25px;
+            line-height: 23px;
         }
 
-        padding: 1em 2em;
-        max-width: 15em;
-        min-width: 20em;
+        padding: 22px 32px;
+        max-width: 300px;
+        min-width: 300px;
         @media screen and (max-width: 767px){
             min-width: 40vw;
-            max-width: 50vw;
+            max-width: 40vw;
+            padding: 11px 16px;
             p {
                 font-size: 14px;
             }
@@ -31,8 +36,8 @@
     }
 
     .btn-link::after {
-        width: .5em;
-        height: .5em;
+        width: 8px;
+        height: 8px;
         @media screen and (max-width: 767px){
             width: 2em;
             height: 2em;
@@ -76,7 +81,7 @@
     right: 10vw;
     content: "";
     border-top: 110vw solid transparent;
-    border-right: 55vw solid #8b0000;
+    border-right: 60vw solid #8b0000;
     @media screen and (max-width: 767px){
         right: 5vw;
         border-top: 210vw solid transparent;

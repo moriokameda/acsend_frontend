@@ -6,3 +6,15 @@
 @import "top-img";
 @import "message";
 @import "detail";
+/**
+フッターの色変更
+ */
+footer {
+    background-color: #ccc;
+    .footer-main {
+        background-color: #ccc;
+    }
+    .footer-copyRight {
+        background-color: #EF454A;
+    }
+}

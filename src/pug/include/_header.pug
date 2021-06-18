@@ -1,10 +1,10 @@
 header.container-fluid
     nav.row.nav-height
         .col-md-5.font-ja.col-8.offset-2.offset-md-0.row
-            .col-2.logo-img-wrap.text-right
+            a.col-2.logo-img-wrap.text-right(href="/")
                 img.logo-img(src="/img/company_icon.png")
             .col-10
-                .title.font-ja 株式会社アセンド
+                a.title.font-ja(href="/") 株式会社アセンド
         .col-md-7.pc-nav
             ul.row.nav-menu.nav-link-none
                 li.col-md.offset-md-2.nav-link-item
@@ -18,21 +18,23 @@ header.container-fluid
                             br
                             span.small-70.font-ja サービス紹介
                 li.col-md.nav-link-item
-                    a(href="/company").nav-link.in-submenu
+                    .nav-link.in-submenu
                         .nav-item Company
                             br
                             span.small-70.font-ja 企業情報
                     ul.sub-nav-menu
                         li
-                            a.sub-nav-item(href="/company/summary") 会社概要
+                            a.sub-nav-item(href="/company").font-ja 企業情報トップ
+                        li
+                            a.sub-nav-item(href="/company/summary").font-ja 会社概要
                 li.col-md.nav-link-item
-                    a(href="/recruit").nav-link.in-submenu
+                    .nav-link.in-submenu
                         .nav-item Recruit
                             br
                             span.small-70.font-ja 採用情報
-                    ul.sub-nav-menu
+                    ul.sub-nav-menu.font-ja
                         li
-                            a.sub-nav-item(href="/recruit/message") メッセージ
+                            a.sub-nav-item(href="/recruit/message") 採用情報トップ
                         li
                             a.sub-nav-item(href="/recruit/about-us") アセンドを知る
                         li
@@ -61,11 +63,13 @@ header.container-fluid
                     li.nav-item.pb-4
                         .row
                             .col-10
-                                a(href="/company").nav-link.in-accordion
+                                .nav-link.in-accordion
                                     .nav-item Company
                                         br
                                         span.small-80.font-ja 企業情報
                                 ul.sub-nav-menu.pl-3
+                                    li.py-2.pl-5
+                                        a.sub-nav-item(href="/company") 企業情報トップ
                                     li.py-2.pl-5
                                         a.sub-nav-item(href="/company/summary") 会社概要
                             .col-2.open-btn
@@ -76,13 +80,13 @@ header.container-fluid
                     li.nav-item.pb-4
                         .row
                             .col-10
-                                a(href="/recruit").nav-link.in-accordion
+                                .nav-link.in-accordion
                                     .nav-item Recruit
                                         br
                                         span.small-80.font-ja 採用情報
                                 ul.sub-nav-menu.pl-5
                                     li.py-2.pl-3
-                                        a.sub-nav-item(href="/recruit/message") メッセージ
+                                        a.sub-nav-item(href="/recruit") 採用情報トップ
                                     li.pb-2.pl-3
                                         a.sub-nav-item(href="/recruit/about-us") アセンドを知る
                                     li.pb-2.pl-3

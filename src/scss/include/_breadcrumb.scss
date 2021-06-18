@@ -3,9 +3,12 @@
  */
 $breadcrumb-divider: quote(">");
 .breadcrumb-wrap {
-    padding-top: 1rem;
+    padding-top: 16px;
     z-index: 2;
     --bs-breadcumb-driver: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E");
+    @media screen and (max-width: 767px){
+        display: none;
+    }
     a {
         text-decoration: none;
         color: #111111;
@@ -15,6 +18,9 @@ $breadcrumb-divider: quote(">");
     }
     .breadcrumb-item {
         color: #111111;
-        font-size: .75rem;
+        font-size: 12px;
+        @media screen and (max-width: 767px){
+            font-size: 10px;
+        }
     }
 }

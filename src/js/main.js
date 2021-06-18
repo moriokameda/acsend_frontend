@@ -11,6 +11,12 @@ $(function () {
         jQuery(this).removeClass("open")
         console.log("close");
     })
+    $('.in-accordion').on("click",function () {
+        $(this).parent(".col-10").siblings(".open-btn").toggle()
+        $(this).parent(".col-10").siblings(".close-btn").toggle()
+        $(this).siblings(".sub-nav-menu").toggle(500)
+
+    })
     $('.open-btn').on("click", function () {
         let elem = $(this).siblings(".col-10");
         $(this).hide()

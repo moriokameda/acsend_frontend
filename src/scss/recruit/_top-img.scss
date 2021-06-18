@@ -7,19 +7,28 @@
     img {
         opacity: 0.6;
         width: 100vw;
-        max-height: 40vw;
+        max-height: 20vw;
+        @media screen and (max-width: 767px){
+            max-height: 30vw;
+        }
     }
 }
 .title-area {
-    padding-top: 10vw;
-    padding-bottom: 20vw;
+    padding-top: 32px;
+    padding-bottom: 48px;
     width: 15vw;
+    @media screen and (max-width: 767px){
+        padding-left: 2.5vw;
+    }
     h1 {
-        font-size: 3.5rem;
+        font-size: 54px;
         font-weight: bold;
+        @media screen and (max-width: 767px){
+            font-size: 28px;
+        }
     }
     p {
-        font-size: 1rem;
+        font-size: 16px;
     }
 
 }

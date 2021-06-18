@@ -1,0 +1,142 @@
+@import "../reset";
+@import "../include/common";
+@import "../include/header";
+@import "../include/footer";
+@import "../include/breadcrumb";
+@import "top-img";
+
+/**
+メッセージ
+ */
+#about-us-top {
+    .title-area {
+        width: 40vw;
+        @media screen and (max-width: 767px){
+            width: 80vw;
+        }
+    }
+}
+#message {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    p {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+        @media screen and (max-width: 767px){
+            text-align: left;
+            padding-left: 2.5vw;
+            font-size: 20px;
+        }
+    }
+}
+/**
+数字で分かるアセンド
+ */
+#understand-number {
+    .card {
+        background-color: #f0f0f0;
+        height: 100%;
+        position: relative;
+    }
+    .card-body {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-text {
+        position: relative;
+        top: 40%;
+        transform: translateY(-50%);
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 28px;
+            font-weight: bold;
+        }
+    }
+
+}
+/**
+勤務条件
+ */
+#job-condition {
+    margin-top: 3rem;
+    .card {
+        background-color: #f0f0f0;
+        height: 100%;
+        position: relative;
+    }
+    .card-body {
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+        height: 100%;
+    }
+    .card-title {
+        position: relative;
+        padding-bottom: 1rem;
+        font-size: 18px;
+    }
+    .card-text {
+        position: relative;
+        font-size: 14px;
+    }
+    .small-70 {
+        font-size: 70% !important;
+    }
+    p {
+        margin-bottom: 0;
+
+    }
+    h3 {
+        font-size: 24px !important;
+        span {
+            font-size: 12px;
+        }
+    }
+    .border-red {
+        text-decoration: underline #ee0000;
+    }
+    .pl-2 {
+        padding-left: 2rem;
+    }
+}
+/**
+働き安さ
+ */
+#ease-of-work {
+    margin-top: 3rem;
+    .card {
+        position: relative;
+        height: 100%;
+    }
+    .card-body {
+        position: relative;
+    }
+}
+
+/**
+フッターの色変更
+ */
+footer {
+    background-color: #ccc;
+    .footer-main {
+        background-color: #ccc;
+    }
+    .file-icon {
+
+        img {
+            padding: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            width: 100%;
+            height: 76px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .footer-copyRight {
+        background-color: #EF454A;
+    }
+}

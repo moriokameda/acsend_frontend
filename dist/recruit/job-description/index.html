@@ -15,11 +15,8 @@
   <body>
     <header class="container-fluid">
       <nav class="row nav-height">
-        <div class="col-md-5 font-ja col-8 offset-2 offset-md-0 row">
-          <div class="col-2 logo-img-wrap text-right"><img class="logo-img" src="/img/company_icon.png"></div>
-          <div class="col-10">
-            <div class="title font-ja">株式会社アセンド</div>
-          </div>
+        <div class="col-md-5 font-ja col-8 offset-2 offset-md-0 row"><a class="col-2 logo-img-wrap text-right" href="/"><img class="logo-img" src="/img/company_icon.png"></a>
+          <div class="col-10"><a class="title font-ja" href="/">株式会社アセンド</a></div>
         </div>
         <div class="col-md-7 pc-nav">
           <ul class="row nav-menu nav-link-none">
@@ -27,16 +24,21 @@
                 <div class="nav-item">Philosophy<br><span class="small-70 font-ja">私たちの想い</span></div></a></li>
             <li class="col-md nav-link-item"><a class="nav-link" href="/service">
                 <div class="nav-item">Service<br><span class="small-70 font-ja">サービス紹介</span></div></a></li>
-            <li class="col-md nav-link-item"><a class="nav-link in-submenu" href="/company">
-                <div class="nav-item">Company<br><span class="small-70 font-ja">企業情報</span></div></a>
+            <li class="col-md nav-link-item">
+              <div class="nav-link in-submenu">
+                <div class="nav-item">Company<br><span class="small-70 font-ja">企業情報</span></div>
+              </div>
               <ul class="sub-nav-menu">
-                <li><a class="sub-nav-item" href="/company/summary">会社概要</a></li>
+                <li><a class="sub-nav-item font-ja" href="/company">企業情報トップ</a></li>
+                <li><a class="sub-nav-item font-ja" href="/company/summary">会社概要</a></li>
               </ul>
             </li>
-            <li class="col-md nav-link-item"><a class="nav-link in-submenu" href="/recruit">
-                <div class="nav-item">Recruit<br><span class="small-70 font-ja">採用情報</span></div></a>
-              <ul class="sub-nav-menu">
-                <li><a class="sub-nav-item" href="/recruit/message">メッセージ</a></li>
+            <li class="col-md nav-link-item">
+              <div class="nav-link in-submenu">
+                <div class="nav-item">Recruit<br><span class="small-70 font-ja">採用情報</span></div>
+              </div>
+              <ul class="sub-nav-menu font-ja">
+                <li><a class="sub-nav-item" href="/recruit/message">採用情報トップ</a></li>
                 <li><a class="sub-nav-item" href="/recruit/about-us">アセンドを知る</a></li>
                 <li><a class="sub-nav-item" href="/recruit/job-description">募集要項</a></li>
               </ul>
@@ -59,9 +61,12 @@
               </li>
               <li class="nav-item pb-4">
                 <div class="row">
-                  <div class="col-10"><a class="nav-link in-accordion" href="/company">
-                      <div class="nav-item">Company<br><span class="small-80 font-ja">企業情報</span></div></a>
+                  <div class="col-10">
+                    <div class="nav-link in-accordion">
+                      <div class="nav-item">Company<br><span class="small-80 font-ja">企業情報</span></div>
+                    </div>
                     <ul class="sub-nav-menu pl-3">
+                      <li class="py-2 pl-5"><a class="sub-nav-item" href="/company">企業情報トップ</a></li>
                       <li class="py-2 pl-5"><a class="sub-nav-item" href="/company/summary">会社概要</a></li>
                     </ul>
                   </div>
@@ -72,10 +77,12 @@
               </li>
               <li class="nav-item pb-4">
                 <div class="row">
-                  <div class="col-10"><a class="nav-link in-accordion" href="/recruit">
-                      <div class="nav-item">Recruit<br><span class="small-80 font-ja">採用情報</span></div></a>
+                  <div class="col-10">
+                    <div class="nav-link in-accordion">
+                      <div class="nav-item">Recruit<br><span class="small-80 font-ja">採用情報</span></div>
+                    </div>
                     <ul class="sub-nav-menu pl-5">
-                      <li class="py-2 pl-3"><a class="sub-nav-item" href="/recruit/message">メッセージ</a></li>
+                      <li class="py-2 pl-3"><a class="sub-nav-item" href="/recruit">採用情報トップ</a></li>
                       <li class="pb-2 pl-3"><a class="sub-nav-item" href="/recruit/about-us">アセンドを知る</a></li>
                       <li class="pb-2 pl-3"><a class="sub-nav-item" href="/recruit/job-description">募集要項</a></li>
                     </ul>
@@ -102,11 +109,11 @@
       </nav>
     </header>
     <main></main>
-    <footer class="mt-5 pt-3">
+    <footer class="pt-5">
       <div class="container-fluid footer-main mt-5">
         <div class="row mt-5">
           <div class="col-md-2 col-5 offset-md-1 offset-1"><a class="footer-link" href="/philosophy">
-              <p class="font-ja font-weight-bold">私たちの想い</p></a>
+              <p class="font-ja font-weight-bold start">私たちの想い</p></a>
             <div class="footer-link__wrap"><a class="footer-link" href="/company">
                 <p class="font-ja font-weight-bold">企業情報</p></a><a class="footer-link" href="/company/summary">
                 <p class="font-ja">- 会社概要</p></a></div><a class="footer-link" href="/news">
@@ -130,14 +137,12 @@
                 <p class="font-ja">- 募集要項</p></a></div>
           </div>
           <div class="col-md-2 col-5"><a class="footer-link" href="/contact/">
-              <p class="font-ja font-weight-bold">お問い合わせ</p></a><a class="footer-link" href="/solicitation-policy">
-              <p class="font-ja font-weight-bold">勧誘方針</p></a><a class="footer-link" href="/margin">
-              <p class="font-ja font-weight-bold">マージン率の公開</p></a><a class="footer-link" href="/privacy-policy">
-              <p class="font-ja font-weight-bold">プライバシーポリシー</p></a></div>
+              <p class="font-ja font-weight-bold start">お問い合わせ</p></a><a class="footer-link" href="/solicitation-policy">
+              <p class="font-ja font-weight-bold start">勧誘方針</p></a><a class="footer-link" href="/margin">
+              <p class="font-ja font-weight-bold start">マージン率の公開</p></a><a class="footer-link" href="/privacy-policy">
+              <p class="font-ja font-weight-bold start">プライバシーポリシー</p></a></div>
         </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row mt-5 mb-3">
+        <div class="row mt-3 mb-3">
           <div class="col-md-3 offset-md-8 row col-8 offset-2">
             <div class="col-4 file-icon"><img src="/img/file-logo.png"></div>
             <div class="col-4 file-icon"><img src="/img/aws-logo-icon.png"></div>
@@ -145,7 +150,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-copyRight bg-danger">
+      <div class="footer-copyRight">
         <p class="text-center font-en">Copyright©︎2021 Ascend Corporation. All Right Reserved.</p>
       </div>
     </footer>

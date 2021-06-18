@@ -1,0 +1,67 @@
+@import "../reset";
+@import "../include/common";
+@import "../include/header";
+@import "../include/footer";
+@import "../include/breadcrumb";
+
+/**
+トップ
+ */
+#top-img {
+    background-color: #bbb;
+    padding-bottom: 3rem;
+    .breadcrumb-wrap {
+        margin-left: 5vw;
+    }
+    .title-area {
+        padding-top: 3rem;
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    }
+}
+/**
+メッセージ
+ */
+#message {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+/**
+仕事詳細テーブル
+ */
+#job-detail {
+
+    tr {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    th {
+        padding-top: 16px;
+        background-color: #bbb;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+    td {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    ul {
+        font-size: 16px;
+        padding-left: 16px;
+    }
+}
+footer {
+    background-color: #ccc;
+    .footer-main {
+        background-color: #cccccc;
+    }
+    .footer-copyRight {
+        background-color: #ef454a;
+    }
+}
